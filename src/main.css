@@ -1,0 +1,202 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    padding: 0 15px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  /* Welcome header styles */
+  .welcome-header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+  }
+  
+  .welcome-header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-header p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .explore-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .explore-button:hover {
+    background-color: #555;
+  }
+  
+  /* About section styles */
+  .about-section {
+    padding: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+
+  .country-navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .country-button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .country-button:hover {
+    background-color: #777;
+  }
+  
+  .country-button:focus {
+    outline: none;
+  }
+  .author{
+    display: block;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .country-navbar {
+      flex-direction: column;
+    }
+  
+    .country-button {
+      margin: 5px 0;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Gap between grid items */
+    grid-auto-rows: max-content;
+    align-content: center;
+
+  }
+
+  /* Styles for the grid items */
+  
+    .grid-item {
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Styles for the news title */
+    .news-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    /* Styles for the news description */
+    .news-description {
+      margin-bottom: 20px;
+      color: #666;
+    }
+    
+    /* Styles for the news meta (date and author) */
+    .news-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 10px;
+    }
+    
+    /* Styles for the news date and author */
+    .news-date,
+    .news-author {
+      flex-basis: 50%;
+    }
+    
+    /* Styles for the "Read More" button */
+    .read-more-btn {
+      display: block;
+      width: 100%;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s ease-in-out;
+    }
+    
+    .read-more-btn:hover {
+      background-color: #0056b3;
+    }
+   
